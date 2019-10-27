@@ -1,12 +1,11 @@
 .container {
     font-family: Arial, Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 18pt;
     text-align: center;
+    position: absolute;
     background: #777;
-    box-sizing: border-box;
-    padding: 5px;
-    margin: 20px;
-    margin-bottom: 20px;
+    padding: 100px;
+    margin-bottom: 40px;
     clear: both;
 }
     
@@ -16,29 +15,30 @@ header {
     padding: 40px;
     border: 960px;
     margin: 20px;
-    width: '960px';
+    width: 960px;
     clear: both;
 }
 
 #nav {
     color: #777;
     background-color: #ebebeb;
-    border: 960px;
+    border: 960 px;
     padding: 40px;
     margin: 20px;
-    width: '960'px;
+    width: 960px;
     clear: both;
 }
 
 
 .column {
-    position: relative;
-    float: left;
+    float: right;
+    max-width: 960px;
     width: 495px;
+    box-sizing: border-box;
     margin-left: 20px;
     color: #777;
     background-color: #ebebeb;
-    padding: 20px;
+    padding: 50px 20px 20px 20px;
     clear: float;
 }
 
@@ -49,32 +49,42 @@ header {
   }
 
 .column {
+    position: relative;
+    box-sizing: border-box;
     background: #ebebeb;
-    height: 225px;
-    width: 400px;
+    height: 300px;
+    width: 495px;
     float: left;
     margin: 20px;
     clear: float;
 }
 
+.aside {
+    width: 430px;
+    box-sizing: border-box;
+}
+
 .article {
     color:#ebebeb;
     background: #777;
-    padding: 20px;
-    clear: both;
+    padding: 5px 20px 1px 20px;
+    clear: float;
 }
 
 h1 {
     color: #777;
+    font-size: 18pt;
     background: #ebebeb;
-    height: 35px;
+    height: 18px;
+    padding: 15px;
     clear: both;
 }
 
 p {
     color: #777;
     background: #ebebeb;
-    height: 35px;
+    height: 18px;
+    padding: 15px;
     clear: both;
 }
 
@@ -85,6 +95,7 @@ footer {
     margin-left: 20px;
     margin-right: 20px;
     color: #777;
+    max-width: 960px;
     text-align:center;
     clear: both;
 }
